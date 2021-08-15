@@ -2,9 +2,11 @@ import React from 'react';
 
 const Header = () => {
   return (
-    <div>
-      Header
-    </div>
+    <div className="header">
+      <h1 className="header-text">
+        Binance Trading Bot
+      </h1>
+    </div >
   );
 }
 

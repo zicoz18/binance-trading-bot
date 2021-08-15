@@ -1,10 +1,10 @@
-import React from 'react';
 import TradesList from './trades-list';
+import Summary from './summary';
 
 const Main = () => {
   return (
-    <div>
-      Welcome to BinanceTradingBot Dashboard
+    <div className="center">
+      <Summary />
       <TradesList />
     </div>
   );

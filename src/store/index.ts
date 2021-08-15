@@ -4,7 +4,7 @@ import promiseMiddleware from 'redux-promise';
 import appReducers from './reducers';
 
 const ReduxStore = () => {
-  const composeEnhancers = (<any>window).__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+  const composeEnhancers = (window as any).__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
   const store = createStore(
     appReducers,
