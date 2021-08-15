@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { getTrades } from '../store/actions';
 import { RootStateOrAny } from 'react-redux';
+import Trade from './trade';
 
 const TradesList = () => {
   /* useSelector allows you to get data from redux store state */
@@ -14,28 +15,22 @@ const TradesList = () => {
 
   return (
     <>
-      This is TradeList
       {
         trades.trades ?
-          trades.trades.map((item: any) => (
-            <div key={item.id}>
-              {item.symbol}
-              <br />
-              {item.price}
-              <br />
-              {item.quantity}
-              <br />
-              {item.side}
-              <br />
-              {item.date}
-              <br />
-              <br />
+          <div className="">
+            <div className="trade-list-title">
+              <h2>
+                Trades
+              </h2>
             </div>
-          ))
+            <div className="trade-list ">
+              {trades.trades.map((item: any) => (
+                <Trade item={item} key={item.id} />
+              ))}
+            </div>
+          </div>
           : null
       }
-
-
     </>
   )
 }

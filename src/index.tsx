@@ -5,6 +5,9 @@ import { Provider } from 'react-redux';
 import Routes from './routes';
 import ReduxStore from './store';
 
+import './styles/styles.css';
+
+
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={ReduxStore()} >

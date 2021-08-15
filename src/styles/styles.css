@@ -1,0 +1,257 @@
+/*
+=============== 
+Fonts
+===============
+*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+/*
+=============== 
+Variables
+===============
+*/
+:root {
+  --clr-primary-1: #def2f1;
+  --clr-primary-2: hsl(43, 77%, 27%);
+  --clr-primary-3: hsl(43, 72%, 37%);
+  --clr-primary-4: hsl(42, 63%, 48%);
+  --clr-primary-5: #3aafa9;
+
+
+  --clr-primary-6: hsl(43, 89%, 70%);
+  --clr-primary-7: #539491; /**/
+  --clr-primary-8: hsl(45, 86%, 81%);
+  --clr-primary-9: #539491;
+
+
+  --clr-primary-10: #287a76;
+
+  /* darkest grey - used for headings */
+
+  --clr-grey-1: #17252a;
+  --clr-grey-5: #2e3a3f;
+
+  --clr-white: #fff;
+  --ff-primary: "Roboto", sans-serif;
+  --ff-secondary: "Open Sans", sans-serif;
+  --spacing: 0.25rem;
+  --radius: 0.5rem;
+
+  /* NEW COLORS */
+  --clr-background-red-orange-gradient: linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%);
+  --clr-background-red: #FE6B8B;
+  --clr-background-orange: #FF8E53;
+  --clr-background-gray: #1B2330;
+}
+/*
+=============== 
+Global Styles
+===============
+*/
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--ff-secondary);
+  background: var(--clr-background-gray);
+  
+  color: var(--clr-grey-1);
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+img:not(.nav-logo) {
+  width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  font-family: var(--ff-primary);
+}
+h1 {
+  font-size: 3rem;
+  }
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+p {
+  margin-bottom: 1.25rem;
+  color: var(--clr-grey-5);
+}
+
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 1rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+}
+/* NEW */
+
+.trade{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  -moz-column-gap: 2rem;
+  column-gap: 2rem;
+  background: var(--clr-background-red-orange-gradient);
+  padding: 3rem 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: var(--radius);
+  text-align: center;
+}
+
+.trade-info{
+  display:grid;
+  row-gap: 2rem;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.trade-info-element{
+  place-items: center;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.balance{
+  text-align: center;
+  font-size: 2.75rem;
+}
+
+.bold-text{
+  font-weight: bold;
+}
+
+.center-text{
+  margin: auto;
+}
+
+.big-text{
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+
+.center {
+  width: 70vw;
+  margin: 0 auto;
+  max-width: 1170px;
+  padding: 0 1.5rem;
+}
+
+.trade-list {
+  margin-bottom: 2rem;
+  border-radius: var(--radius);
+  text-align: center;
+}
+
+.header {
+  height: 7rem;
+  padding: auto;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0 3rem 0 ;
+}
+
+.header-text{
+  width: 100%;
+  max-width: 1170px;
+  text-align: center;
+  color: var(--clr-background-orange);
+}
+
+.trade-list-header{
+  background-color: #287a76;
+}
+
+.trade-list-title{
+  color: var(--clr-background-red);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.current-balance-container{
+  background-color: var(--clr-background-red);
+  color:var(--clr-background-mantis-mint-gradient);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  border-radius: var(--radius);
+}
+
+.current-balance-element{ 
+  text-align: center;
+  justify-content: center;
+  padding: 2rem;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.general-info-container{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 1fr 2fr;
+}
+
+.history-container{
+  background-color: var(--clr-background-orange);
+  /* color:var(--clr-background-red); */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  border-radius: var(--radius);
+}
+
+.history-element{
+  padding: 2rem;
+  text-align: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.summary-container{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-column-gap: 2rem;
+}
