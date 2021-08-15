@@ -11,23 +11,6 @@ Variables
 ===============
 */
 :root {
-  --clr-primary-1: #def2f1;
-  --clr-primary-2: hsl(43, 77%, 27%);
-  --clr-primary-3: hsl(43, 72%, 37%);
-  --clr-primary-4: hsl(42, 63%, 48%);
-  --clr-primary-5: #3aafa9;
-
-
-  --clr-primary-6: hsl(43, 89%, 70%);
-  --clr-primary-7: #539491; /**/
-  --clr-primary-8: hsl(45, 86%, 81%);
-  --clr-primary-9: #539491;
-
-
-  --clr-primary-10: #287a76;
-
-  /* darkest grey - used for headings */
-
   --clr-grey-1: #17252a;
   --clr-grey-5: #2e3a3f;
 
