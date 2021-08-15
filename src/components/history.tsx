@@ -4,7 +4,7 @@ const History = (props: any) => {
   return (
     <div className="history-container">
       <div className="history-element">
-        Dayly: -2 ${/* {props.dayly} */}
+        Daily: -2 ${/* {props.dayly} */}
       </div>
       <div className="history-element">
         Weekly: +10 ${/* {props.weekly} */}
