@@ -14,7 +14,7 @@ const Routes = () => (
         <Route path="/" component={Main} />
       </Switch>
     </MainLayout>
-    <Footer />
+    {/* <Footer /> */}
   </BrowserRouter>
 )
 

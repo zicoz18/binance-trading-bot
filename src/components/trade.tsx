@@ -1,6 +1,11 @@
 import React from 'react';
 
 const Trade = (props: any) => {
+
+  const pretifyDate = (dateAsISOString: string) => {
+    const date = new Date(dateAsISOString);
+    return date.toLocaleString();
+  }
   return (
     <>
       <div className="trade" >
@@ -18,7 +23,7 @@ const Trade = (props: any) => {
             Amount: {props.item.quantity}
           </div>
           <div className="trade-info-element">
-            {props.item.date}
+            {pretifyDate(props.item.date)}
           </div>
         </div>
 
@@ -27,8 +32,7 @@ const Trade = (props: any) => {
             Balance After Trade
           </div>
           <div className="balance">
-            38 $
-            {/* props.item.amountInUsdt */}
+            {props?.item?.balance?.amountInUsdt || '-'}
           </div>
         </div>
       </div>

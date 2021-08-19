@@ -6,7 +6,7 @@ import Trade from './trade';
 
 const TradesList = () => {
   /* useSelector allows you to get data from redux store state */
-  const trades = useSelector((state: RootStateOrAny) => state.trades)
+  const tradesStore = useSelector((state: RootStateOrAny) => state.trades)
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -16,7 +16,7 @@ const TradesList = () => {
   return (
     <>
       {
-        trades.trades ?
+        tradesStore.trades ?
           <div className="">
             <div className="trade-list-title">
               <h2>
@@ -24,7 +24,7 @@ const TradesList = () => {
               </h2>
             </div>
             <div className="trade-list ">
-              {trades.trades.map((item: any) => (
+              {tradesStore.trades.map((item: any) => (
                 <Trade item={item} key={item.id} />
               ))}
             </div>

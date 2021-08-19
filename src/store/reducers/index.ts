@@ -1,11 +1,14 @@
 import { combineReducers } from 'redux';
 
 import trades from './trade.reducer';
-import balances from './balance.reducer';
+import balance from './balance.reducer';
+import historicalBalance from './historical-balance.reducer';
+
 
 const appReducers = combineReducers({
   trades,
-  balances
+  balance,
+  historicalBalance,
 });
 
 export default appReducers;

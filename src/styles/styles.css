@@ -195,10 +195,13 @@ p {
 .current-balance-container{
   background-color: var(--clr-background-red);
   color:var(--clr-background-mantis-mint-gradient);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
   border-radius: var(--radius);
+  /* display: grid; */
+  /* grid-template-columns: 1fr 1fr; */
+  /* align-items: center; */
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }
 
 .current-balance-element{ 
