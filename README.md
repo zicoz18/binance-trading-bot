@@ -1,4 +1,4 @@
-# [Binance Trading bot](https://binance-trading-bot.netlify.app)
+# [Binance Trading Bot](https://binance-trading-bot.netlify.app)
 This is a Front-End application for [Binance Trading Bot Server](https://github.com/zicoz18/btb-server). Which allows user to track the performance of the bot.
 
 ## What this application does
