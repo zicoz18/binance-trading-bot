@@ -18,7 +18,6 @@ const History = (props: any) => {
   }, [dispatch])
 
   const calculateBalanceDifference = (type: string) => {
-    const storeName = `${type}Store`;
     const historicalBalance = parseFloat((balanceStore.balance - historicalBalanceStore[type]).toFixed(3));
     if (historicalBalance > 0) {
       return `+${historicalBalance}`

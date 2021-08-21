@@ -25,7 +25,7 @@ const TradesList = () => {
 
   useEffect(() => {
     dispatch(getTrades(pageNumber))
-  }, [pageNumber])
+  }, [pageNumber, dispatch])
 
   return (
     <>

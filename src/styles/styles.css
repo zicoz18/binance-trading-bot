@@ -266,3 +266,25 @@ p {
 .right-button{
   background-color: #FF8E53;
 }
+
+.footer {
+  height: 4rem;
+  padding: auto;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  /* margin: 2rem 0 3rem 0 ; */
+}
+
+.footer-text{
+    background-color: red;
+    background-image: var(--clr-background-red-orange-gradient) ;
+    background-size: 100%;
+    background-repeat: repeat;
+    text-transform: capitalize;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}

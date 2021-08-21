@@ -2,10 +2,10 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <div className="header">
-      <h1 className="header-text">
-        Footer
-      </h1>
+    <div className="footer">
+      <p className="footer-text" >
+        &copy; <span id="date"></span> ziya icoz. all rights reserved
+      </p>
     </div >
   );
 }
